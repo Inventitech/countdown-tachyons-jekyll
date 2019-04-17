@@ -38,14 +38,15 @@ function initializeClock(id, endtime) {
 }
 
 // example 15 days out
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+//var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 // people in different timezones will see different dates unless you use UTC
 // Searcn your timezone in UTC
 // then use this format:
-//var deadline = new Date(Date.parse('10  2017 19:15:00Z'));
+//var deadline = Date.parse('10 June 2019 19:15:00Z');
+var deadline = new Date('06 10 2019');
 
 if (new Date() > deadline) {
-  alert('COUNTDOWN COMPLETE! \n Some Call to Action!!!');
+  alert('TAKE OFF!');
 }
 
 initializeClock('clockdiv', deadline);

@@ -43,7 +43,7 @@ function initializeClock(id, endtime) {
 // Searcn your timezone in UTC
 // then use this format:
 //var deadline = Date.parse('10 June 2019 19:15:00Z');
-var deadline = new Date('06 10 2019');
+var deadline = new Date('06 20 2019');
 
 if (new Date() > deadline) {
   alert('TAKE OFF!');
